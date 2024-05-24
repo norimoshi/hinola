@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>FrizzFlow</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              FrizzFlow
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Enter your search term...">
+    <button type="button" id="searchButton">Search</button>
+</div>
+
+<script>
+function performSearch() {
+    var searchTerm = document.getElementById("searchInput").value;
+    if (searchTerm.trim() !== "") {
+        // Redirect to different webpages based on search term
+        if (searchTerm === "contact") {
+            window.location.href = "contact.html?search=" + encodeURIComponent(searchTerm);
+        } else if (searchTerm === "product") {
+            window.location.href = "product.html?search=" + encodeURIComponent(searchTerm);
+        } else if (searchTerm === "about") {
+            window.location.href = "about.html?search=" + encodeURIComponent(searchTerm);
+        } else {
+            // Default redirection for unknown search terms
+            window.location.href = "default_page.html?search=" + encodeURIComponent(searchTerm);
+        }
+    } else {
+        alert("Please enter a search term.");
+    }
+}
+
+document.getElementById("searchButton").addEventListener("click", performSearch);
+
+// Add event listener for Enter key press
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        performSearch();
+    }
+});
+</script>
+
+       
+            <div class="user_optio_box">
+              <a href="login.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+            </div>  
+			</div>
+        </nav>
+      </div>
+    </header>
+    <section class="slider_section ">
+      <div class="slider_bg_box">
+        <img src="images\designhome.png" alt="">
+      </div>
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                     Elevate Your Hydration
+                    </h1>
+                    <p>
+                      Ditch the disposables and express your style with our premium tumblers.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="about.html" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Stylish Tumblers for Every Adventure!
+                    </h1>
+                    <p>
+                       We offer a curated collection of stylish tumblers designed to keep your drinks hot or cold for hours.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="about.html" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Find Your Perfect Tumbler
+                    </h1>
+                    <p>
+                      Whether you're hitting the gym, conquering the workday commute, or exploring the great outdoors, our tumblers are the perfect companions.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="about.html" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Drink in Style
+                    </h1>
+                    <p>
+                      we believe hydration shouldn't be a chore - it should be an expression of your personality.
+
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="about.html" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Tumblers Made for You
+                    </h1>
+                    <p>
+                      That's why we offer a collection of  eye-catching tumblers that are as stylish as they are functional.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="about.html" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="#customCarousel1" data-slide-to="3"></li>
+          <li data-target="#customCarousel1" data-slide-to="4"></li>
+        </ol>
+      </div>
+    </section>
+  </div>
+  <section class="service_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/feature-1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Fast Delivery
+              </h5>
+              <p>
+			We offer speedy delivery options to get your order to you ASAP. Choose from next-day to express shipping.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/feature-2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Free Shipping
+              </h5>
+              <p>
+                Enjoy complimentary shipping!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/feature-3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Best Quality
+              </h5>
+              <p>
+                Leakproof, insulated tumbler keeps drinks hot/cold for hours. Durable, built to last. Shop styles you'll love. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/feature-4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                24/7 Customer support
+              </h5>
+              <p>
+                Get help anytime with our 24/7 support. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="about_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="img_container">
+          <div class="img-box b1">
+            <img src="images\tumbler1.png" alt="">
+          </div>
+          <div class="img-box b2">
+            <img src="images\tumbler2.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h2>
+            About Our Shop
+          </h2>
+          <p>
+            On-the-go convenience! Our tumblers come with secure lids and reusable straws, so you can enjoy your drinks without worry. Perfect for the gym, work, or a day out.
+          </p>
+          <a href="about.html">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containers">
+ <div class="video-container">
+    <div class="text-container">
+        <h2>Stay Hydrated and Drink with Frizzflow</h2>
+    </div>
+    <div class="video-wrapper">
+        <video width="560" height="315" controls>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+</section>
+  <section class="product_section ">
+    <div class="container">
+      <div class="product_heading">
+        <h2>
+          Top Sale Tumbler
+        </h2>
+      </div>
+      <div class="product_container">
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/gojitumbler.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Goji Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 700
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblerberry.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Berry Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 700
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="product.html">
+              Go To Products
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/lupinetumbler.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                 Lupine Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 700
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="product_section ">
+    <div class="container">
+      <div class="product_heading">
+        <h2>
+          Feature Tumbler
+        </h2>
+      </div>
+      <div class="product_container">
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblercapfir.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Capfir Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 800
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblercapoat.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Cap Oat Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span>  850
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="product.html">
+             Go to products
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblerblack.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Black Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 700
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product_section ">
+    <div class="container">
+      <div class="product_heading">
+        <h2>
+          New Arrivals
+        </h2>
+      </div>
+      <div class="product_container">
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblerswirl.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Swirl Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span>  1,050
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblertrillium.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Trillium Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 1,050
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="product.html">
+              Go to products
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="img-box">
+              <img src="images/tumblercascade.png" alt="">
+            </div>
+            <div class="detail-box">
+              <div class="text">
+                <h6>
+                  Cascade Tumbler
+                </h6>
+                <h5>
+                  <span>₱</span> 950
+                </h5>
+              </div>
+              <div class="like">
+                <h6>
+                  Like
+                </h6>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          FrizzFlow
+        </h2>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About Shop
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location-white.png" width="18px" alt="">
+              </div>
+              <p>
+                Level 3, Food Express, Gateway Mall  Quezon City
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +63 123 456 6789
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                frizzflow@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Informations
+            </h5>
+            <p>
+              Elevate your hydration with our premium tumblers. Temperature control: Double-walled vacuum insulation ensures your beverages stay icy cold for up to 12 hours or piping hot for up to 6 hours (depending on the size). Shop now and experience the difference a premium tumbler can make!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Instagram
+            </h5>
+            <div class="insta_container">
+              <div class="row m-0">
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblerswirl.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblerberry.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercapfir.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercascade.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercapoat.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/lupinetumbler.png" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <img src="images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/twitter.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/linkedin.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+</body>
+
+</html>

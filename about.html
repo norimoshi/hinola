@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>FrizzFlow</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              FrizzFlow
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+			<div class="search">
+    <input type="text" id="searchInput" placeholder="Enter your search term...">
+    <button type="button" id="searchButton">Search</button>
+</div>
+
+<script>
+function performSearch() {
+    var searchTerm = document.getElementById("searchInput").value;
+    if (searchTerm.trim() !== "") {
+        // Redirect to different webpages based on search term
+        if (searchTerm === "contact") {
+            window.location.href = "contact.html?search=" + encodeURIComponent(searchTerm);
+        } else if (searchTerm === "product") {
+            window.location.href = "product.html?search=" + encodeURIComponent(searchTerm);
+        } else if (searchTerm === "home") {
+            window.location.href = "home.html?search=" + encodeURIComponent(searchTerm);
+        } else {
+            // Default redirection for unknown search terms
+            window.location.href = "default_page.html?search=" + encodeURIComponent(searchTerm);
+        }
+    } else {
+        alert("Please enter a search term.");
+    }
+}
+
+document.getElementById("searchButton").addEventListener("click", performSearch);
+
+// Add event listener for Enter key press
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        performSearch();
+    }
+});
+</script>
+            <div class="user_optio_box">
+              <a href="login.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="wrapper">
+  <section id="card1" class="card">
+   <img src="images/photos.jpg" alt="Image Description" class="card__image">
+  <svg
+    viewBox="0 0 16 16"
+    class="bi bi-image-fill"
+    fill="currentColor"
+    height="40"
+    width="40"
+    xmlns="http://www.w3.org/2000/svg">
+    
+  </svg>
+  <div class="card__content">
+    <p class="card__title">Founder</p>
+    <p class="card__description">
+      
+Meet the visionary behind Tumbler: a trailblazer, innovator, and advocate for creative expression in the digital age. With a passion for fostering online communities, they've sculpted Tumbler into a vibrant platform where users can share their stories, art, and ideas with the world.
+    </p>
+  </div>
+</section>
+</div>
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img_container">
+            <div class="img-box b1">
+              <img src="images/tumbler1.png" alt="">
+            </div>
+            <div class="img-box b2">
+              <img src="images/tumbler2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              About Our Shop
+            </h2>
+            <p>
+              FrizzFlow is a unique shop that has gained a loyal following for its signature product. Opened in 2023, the shop specializes in this revolutionary device that utilizes advanced ionic technology to smooth and shape even the most stubborn materials. Customers rave about the Tumbler's ability to quickly transform unruly textures into sleek, polished finishes. Beyond the Tumbler, FrizzFlow offers a curated selection of complementary products that enhance the device's capabilities. The shop's knowledgeable staff is always on hand to provide personalized recommendations and usage tips, ensuring each customer can get the most out of the Tumbler. With its innovative approach and commitment to customer satisfaction, FrizzFlow has established itself as a go-to destination for anyone seeking high-performance tumbling solutions.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          FrizzFlow
+        </h2>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About Shop
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location-white.png" width="18px" alt="">
+              </div>
+              <p>
+                Level 3, Food Express, Gateway Mall  Quezon City
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +63 123 456 6789
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                frizzflow@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Informations
+            </h5>
+            <p>
+              Elevate your hydration with our premium tumblers. Temperature control: Double-walled vacuum insulation ensures your beverages stay icy cold for up to 12 hours or piping hot for up to 6 hours (depending on the size). Shop now and experience the difference a premium tumbler can make!
+            </p>
+          </div>
+        </div>
+
+   <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Instagram
+            </h5>
+            <div class="insta_container">
+              <div class="row m-0">
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblerswirl.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblerberry.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercapfir.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercascade.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/tumblercapoat.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/lupinetumbler.png" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <img src="images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/twitter.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/linkedin.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+</body>
+
+</html>
